@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Checkboxes for Secondary Colors -->
+    <CheckBox
+        android:id="@+id/checkbox_orange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Orange"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true" />
+
+    <CheckBox
+        android:id="@+id/checkbox_green"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Green"
+        android:layout_below="@id/checkbox_orange"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true" />
+
+    <CheckBox
+        android:id="@+id/checkbox_purple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Purple"
+        android:layout_below="@id/checkbox_green"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true" />
+
+    <!-- TextView to display selected colors -->
+    <TextView
+        android:id="@+id/selected_colors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selected colors will appear here"
+        android:layout_below="@id/checkbox_purple"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
