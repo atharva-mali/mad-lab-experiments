@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your name" />
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_below="@id/editTextName"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/buttonRetrieve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Retrieve Users"
+        android:layout_below="@id/buttonSubmit"
+        android:layout_marginTop="16dp" />
+
+    <ListView
+        android:id="@+id/listViewUsers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonRetrieve"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/editTextDeleteId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter user ID to delete"
+        android:layout_below="@id/listViewUsers"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/buttonDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete User"
+        android:layout_below="@id/editTextDeleteId"
+        android:layout_marginTop="16dp" />
+</RelativeLayout>
